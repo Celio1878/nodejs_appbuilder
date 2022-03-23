@@ -1,19 +1,27 @@
 {
-	"name": "nodejs-builder",
+	"name": "nodejs-appbuilder",
 	"version": "1.0.0",
-	"description": "nodejs-builder",
-	"main": "index.js",
-	"type": "module",
+	"description": "Builder API Express",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	 ],
 	"engines": {
 		"node": "17"
 	},
 	"scripts": {
-		"test": "jest --ignore=node_modules",
+		"test": "STAGE=test SERVICE_NAME=test REGION=sa-east-1 jest --ignore=node_modules",
 		"test:watch": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --watchAll",
 		"test:coverage": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --coverage",
-		"build": "webpack --mode production",
+		"build": "rm -rf dist && tsc",
+		"prepare": "npm run build",
 		"find-deadcode": "ts-prune"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/celio1878/nodejs_appbuilder"
+	 },
 	"keywords": [],
 	"author": "Celio Vieira",
 	"license": "ISC",

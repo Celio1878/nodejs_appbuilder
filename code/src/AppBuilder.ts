@@ -51,7 +51,7 @@ export function AppBuilder(modules: Module[] = []): AppBuilderReturnType {
 			return app;
 		},
 	};
-}
+};
 
 /**
  * Standart Args for create a API

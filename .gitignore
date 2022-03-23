@@ -1,3 +1,11 @@
 .vscode
-.build
-node_modules
+cdk/*.js
+cdk/!jest.config.js
+cdk/*.d.ts
+cdk/node_modules
+cdk/.cdk.staging
+cdk/cdk.out
+code/node_modules
+code/dist
+code/.webpack
+code/package-lock.json
