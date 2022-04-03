@@ -8,7 +8,7 @@ describe("not_empty_string", () => {
     it("Deve gerar uma excecao quando uma string invalida for recebida.", () => {
       // Act // Assert
       expect(() => {
-        not_empty_string(str);
+        not_empty_string(str, "str-name");
       }).toThrow();
     });
   });

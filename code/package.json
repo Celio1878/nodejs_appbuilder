@@ -1,6 +1,6 @@
 {
 	"name": "nodejs-appbuilder",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Builder API Express",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
 		"dist"
 	 ],
 	"engines": {
-		"node": "17"
+		"node": "16.x"
 	},
 	"scripts": {
 		"test": "STAGE=test SERVICE_NAME=test REGION=sa-east-1 jest --ignore=node_modules",

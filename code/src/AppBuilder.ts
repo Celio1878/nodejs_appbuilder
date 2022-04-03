@@ -4,9 +4,7 @@ import * as express from "express";
 import { NextFunction, Request, Response } from "express";
 import {
   AppBuilderReturnType,
-  AsyncMiddleware,
   BuildArgs,
-  ErrorMiddleware,
   Middleware,
   Module,
 } from "./utils/ApiTypes";
@@ -43,7 +41,8 @@ export function AppBuilder(modules: Module[] = []): AppBuilderReturnType {
       modules
         .flatMap((module) => module.to_add_to_start_of_middleware_chain)
         .filter((middleware) => !!middleware)
-        .forEach((middleware) => app.use("*", middleware as Middleware));
+
+        .forEach((middleware) => app.use("*", middleware));
 
       // adiciona endpoints.
       const modules_map = modules.reduce(
@@ -60,7 +59,7 @@ export function AppBuilder(modules: Module[] = []): AppBuilderReturnType {
         )
       );
 
-      app.use(default_props.error_handler as ErrorMiddleware);
+      app.use(default_props.error_handler);
 
       return app;
     },
@@ -84,7 +83,7 @@ function default_args(args: Partial<BuildArgs>): BuildArgs {
       ...(args?.cors || {}),
     },
 
-    error_handler: (error: any, req: Request, res: Response) =>
+    error_handler: (error: any, _req: Request, res: Response) =>
       reply_error(res, error),
   };
 
@@ -150,9 +149,7 @@ function add_module_endpoints_to_app(
   return app;
 }
 
-function with_error_handling(
-  middleware: Middleware | AsyncMiddleware
-): Middleware {
+function with_error_handling(middleware: any): Middleware {
   return (req: Request, res: Response, next: NextFunction) => {
     try {
       const middleware_result = middleware(req, res, next);
