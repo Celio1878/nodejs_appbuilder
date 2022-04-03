@@ -44,12 +44,12 @@ export type Method = "USE" | "GET" | "POST" | "PATCH" | "PUT" | "DELETE";
 export type BuildArgs = {
   base_url?: string;
   cors?: CorsOptions;
-  error_handler: ErrorMiddleware;
+  error_handler?: ErrorMiddleware;
 };
 
 export type AppBuilderReturnType = {
   add_module: (module: Module) => AppBuilderReturnType;
-  build: (args: BuildArgs, app: ExpressApp) => ExpressApp;
+  build: (args?: BuildArgs, app?: ExpressApp) => ExpressApp;
 };
 
 export type ExpressApp = ReturnType<typeof express>;

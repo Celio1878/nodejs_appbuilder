@@ -5,6 +5,7 @@ import { NextFunction, Request, Response } from "express";
 import {
   AppBuilderReturnType,
   BuildArgs,
+  ErrorMiddleware,
   Middleware,
   Module,
 } from "./utils/ApiTypes";
@@ -59,7 +60,7 @@ export function AppBuilder(modules: Module[] = []): AppBuilderReturnType {
         )
       );
 
-      app.use(default_props.error_handler);
+      app.use(default_props.error_handler as ErrorMiddleware);
 
       return app;
     },
