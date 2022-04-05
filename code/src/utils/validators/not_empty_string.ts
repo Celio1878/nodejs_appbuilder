@@ -1,3 +1,10 @@
+/**
+ * Verify if string is not empty
+ *
+ * @param value
+ * @param var_name
+ * @returns
+ */
 export function not_empty_string(value: string, var_name: string): string {
   if (typeof value !== "string") {
     throw new Error(`${var_name} isn't valid string.`);

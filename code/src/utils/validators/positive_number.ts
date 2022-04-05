@@ -1,3 +1,10 @@
+/**
+ * Verify if value is positive number
+ *
+ * @param n
+ * @param var_name
+ * @returns
+ */
 export function positive_number(n: number, var_name = "") {
   const num = +n;
 
