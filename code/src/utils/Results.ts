@@ -1,15 +1,15 @@
 export type Result<T> = [error?: any, result?: T];
 
-export function success<T>(r: T): Result<T> {
-  return [null, r];
+export function success<T>(result: T): Result<T> {
+  return [null, result];
 }
 
 export function failed(err: string): Result<any> {
   return [err, null];
 }
 
-export function has_succeded(r: Result<any>) {
-  return !r[0] && !!r[1];
+export function has_succeded(result: Result<any>) {
+  return !result[0] && !!result[1];
 }
 
 export function has_failed(r: Result<any>) {

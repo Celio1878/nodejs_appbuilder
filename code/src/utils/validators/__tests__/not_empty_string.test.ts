@@ -5,8 +5,7 @@ describe("not_empty_string", () => {
   const tests = ["", " ", "   ", null, 1, undefined, 0, [], {}, NaN];
 
   tests.forEach((str: any) => {
-    it("Deve gerar uma excecao quando uma string invalida for recebida.", () => {
-      // Act // Assert
+    test("should to return exception why invalid string.", () => {
       expect(() => {
         not_empty_string(str, "str-name");
       }).toThrow();

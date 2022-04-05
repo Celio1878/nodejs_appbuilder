@@ -2,13 +2,13 @@
   "compilerOptions": {
     "declaration": true,
     "strictNullChecks": true,
-    "target": "es5",
+    "target": "ES2022",
     "outDir": "dist",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
-    "lib": ["es2015", "dom", "es2019"],
-    "rootDir": "src" 
+    "lib": ["ES7", "dom", "ESNext"],
+    "rootDir": "src"
   },
   "exclude": ["dist"]
 

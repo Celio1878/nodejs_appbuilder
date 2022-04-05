@@ -1,26 +1,29 @@
 import { not_empty_array } from "../not_empty_array";
 
 describe("not_empty_array", () => {
-  [[1], [-1], [""], ["1", "2"]].forEach((arr) => {
-    it("deve retornar valor de um array com elementos.", () => {
+  const arr = [[1], [-1], [""], ["1", "2"]];
+  const invalid_arr = [[], 1, "", "Celio", true, 0, "[]"];
+
+  arr.forEach((list) => {
+    test("should to return the elements of list.", () => {
       // Arrange
 
       // Act
-      const v = not_empty_array(arr);
+      const list_values = not_empty_array(list);
 
       // Assert
-      expect(v).toBe(arr);
+      expect(list_values).toBe(list);
     });
   });
 
-  [[], 1, "", "ricardo", true, 0, "[]"].forEach((t) => {
-    it("deve gerar erro ao receber valor invalido.", () => {
+  invalid_arr.forEach((elements) => {
+    test("should to return error.", () => {
       // Arrange
 
       // Assert
       expect(() => {
         // Act
-        not_empty_array(t as any[]);
+        not_empty_array(elements as any[]);
       }).toThrow();
     });
   });

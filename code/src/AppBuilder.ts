@@ -9,15 +9,14 @@ import {
   Middleware,
   Module,
 } from "./utils/ApiTypes";
-import { reply_error } from "./utils/reply";
+import { reply_error } from "./utils/replys";
 
 /**
- * Cria uma api.
- *
+ * Cria Api.
  * @param modules
+ * Deve adicionar os modulos na ordem que devem ser executados.
  * @returns
  */
-
 export function AppBuilder(modules: Module[] = []): AppBuilderReturnType {
   const add_module = (module: Module) => AppBuilder(modules.concat(module));
 
@@ -43,7 +42,7 @@ export function AppBuilder(modules: Module[] = []): AppBuilderReturnType {
         .flatMap((module) => module.to_add_to_start_of_middleware_chain)
         .filter((middleware) => !!middleware)
 
-        .forEach((middleware) => app.use("*", middleware));
+        .forEach((middleware) => app.use("*", middleware as Middleware));
 
       // adiciona endpoints.
       const modules_map = modules.reduce(

@@ -1,14 +1,14 @@
-import pino from 'pino';
+import pino from "pino";
 
 /**
- * Criar logger performatico para substituir console.log()
+ * Utilizado para logs da aplicação.
  */
 export const logger = pino({
-	enabled: !!!process.env.LOG_DISABLED,
-	transport: {
-		target: 'pino-pretty',
-		options: {
-			colorize: true,
-		},
-	},
+	
+  transport: {
+    target: "pino-pretty",
+    options: {
+      colorize: true,
+    },
+  },
 });

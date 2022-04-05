@@ -1,34 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648963526285" clover="3.2.0">
-  <project timestamp="1648963526285" name="All files">
-    <metrics statements="19" coveredstatements="18" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3" elements="30" coveredelements="29" complexity="0" loc="19" ncloc="19" packages="1" files="3" classes="3"/>
-    <file name="not_empty_array.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/validators/not_empty_array.ts">
-      <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-      <line num="1" count="22" type="cond" truecount="1" falsecount="0"/>
-      <line num="2" count="11" type="cond" truecount="1" falsecount="0"/>
-      <line num="3" count="6" type="stmt"/>
-      <line num="6" count="5" type="cond" truecount="1" falsecount="0"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="10" count="4" type="stmt"/>
-    </file>
-    <file name="not_empty_string.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/validators/not_empty_string.ts">
-      <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="10" type="cond" truecount="1" falsecount="0"/>
-      <line num="3" count="7" type="stmt"/>
-      <line num="6" count="3" type="cond" truecount="1" falsecount="0"/>
-      <line num="7" count="3" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
-    </file>
-    <file name="positive_number.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/validators/positive_number.ts">
-      <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-      <line num="1" count="26" type="cond" truecount="1" falsecount="0"/>
-      <line num="2" count="13" type="stmt"/>
-      <line num="4" count="13" type="cond" truecount="1" falsecount="0"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="8" count="12" type="cond" truecount="1" falsecount="0"/>
-      <line num="9" count="8" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
-    </file>
+<coverage generated="1649121926111" clover="3.2.0">
+  <project timestamp="1649121926111" name="All files">
+    <metrics statements="88" coveredstatements="80" conditionals="32" coveredconditionals="26" methods="25" coveredmethods="23" elements="145" coveredelements="129" complexity="0" loc="88" ncloc="88" packages="3" files="7" classes="7"/>
+    <package name="src">
+      <metrics statements="53" coveredstatements="51" conditionals="20" coveredconditionals="17" methods="17" coveredmethods="16"/>
+      <file name="AppBuilder.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/AppBuilder.ts">
+        <metrics statements="51" coveredstatements="49" conditionals="20" coveredconditionals="17" methods="17" coveredmethods="16"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="43" type="stmt"/>
+        <line num="23" count="43" type="stmt"/>
+        <line num="26" count="21" type="stmt"/>
+        <line num="27" count="21" type="stmt"/>
+        <line num="28" count="21" type="stmt"/>
+        <line num="30" count="21" type="stmt"/>
+        <line num="36" count="21" type="stmt"/>
+        <line num="37" count="63" type="stmt"/>
+        <line num="41" count="21" type="stmt"/>
+        <line num="42" count="22" type="stmt"/>
+        <line num="43" count="22" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="48" count="21" type="stmt"/>
+        <line num="49" count="22" type="stmt"/>
+        <line num="53" count="21" type="stmt"/>
+        <line num="54" count="22" type="stmt"/>
+        <line num="62" count="21" type="stmt"/>
+        <line num="64" count="21" type="stmt"/>
+        <line num="76" count="21" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="90" count="21" type="stmt"/>
+        <line num="101" count="21" type="stmt"/>
+        <line num="119" count="24" type="cond" truecount="1" falsecount="1"/>
+        <line num="120" count="24" type="stmt"/>
+        <line num="121" count="24" type="stmt"/>
+        <line num="124" count="24" type="stmt"/>
+        <line num="127" count="24" type="stmt"/>
+        <line num="135" count="24" type="stmt"/>
+        <line num="137" count="24" type="stmt"/>
+        <line num="140" count="24" type="stmt"/>
+        <line num="141" count="2" type="stmt"/>
+        <line num="149" count="24" type="stmt"/>
+        <line num="153" count="25" type="stmt"/>
+        <line num="154" count="25" type="stmt"/>
+        <line num="155" count="25" type="stmt"/>
+        <line num="157" count="25" type="cond" truecount="3" falsecount="0"/>
+        <line num="158" count="3" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="173" count="96" type="stmt"/>
+        <line num="175" count="96" type="cond" truecount="1" falsecount="0"/>
+        <line num="176" count="30" type="stmt"/>
+        <line num="179" count="66" type="cond" truecount="1" falsecount="0"/>
+        <line num="180" count="59" type="stmt"/>
+        <line num="183" count="66" type="cond" truecount="1" falsecount="0"/>
+        <line num="184" count="15" type="stmt"/>
+        <line num="187" count="66" type="stmt"/>
+      </file>
+      <file name="logger.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/logger.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="16" coveredstatements="11" conditionals="4" coveredconditionals="1" methods="5" coveredmethods="4"/>
+      <file name="replys.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/replys.ts">
+        <metrics statements="14" coveredstatements="9" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="22" type="stmt"/>
+      </file>
+      <file name="sleep.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/sleep.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils.validators">
+      <metrics statements="19" coveredstatements="18" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <file name="not_empty_array.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/validators/not_empty_array.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="6" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+      </file>
+      <file name="not_empty_string.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/validators/not_empty_string.ts">
+        <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="positive_number.ts" path="/home/celio1878/Documents/projects/nodejs_appbuilder/code/src/utils/validators/positive_number.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="13" type="stmt"/>
+        <line num="4" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

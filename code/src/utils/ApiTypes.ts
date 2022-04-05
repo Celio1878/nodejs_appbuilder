@@ -10,11 +10,11 @@ export type Module = {
   base_url?: string;
   endpoints?: EndpointDefinition[];
   children?: Module[];
-  to_add_to_start_of_middleware_chain: (Middleware | AsyncMiddleware)[];
+  to_add_to_start_of_middleware_chain?: (Middleware | AsyncMiddleware)[];
   public_services?: any;
 };
 
-export type EndpointDefinition = {
+type EndpointDefinition = {
   method: Method;
   endpoint: string;
   middlewares: (Middleware | AsyncMiddleware | ErrorMiddleware)[];
