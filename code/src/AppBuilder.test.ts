@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 import * as request from "supertest";
 import { AppBuilder } from "./AppBuilder";
-import { Method, Module } from "./utils/ApiTypes";
-import { reply_success } from "./utils/replys";
+import { Method, Module } from "./ApiTypes";
+import { reply_success } from "./replys";
 import { sleep } from "./utils/sleep";
 
 describe("AppBuilder", () => {

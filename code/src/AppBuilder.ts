@@ -8,8 +8,8 @@ import {
   ErrorMiddleware,
   Middleware,
   Module,
-} from "./utils/ApiTypes";
-import { reply_error } from "./utils/replys";
+} from "./ApiTypes";
+import { reply_error } from "./replys";
 
 /**
  * Cria Api.
