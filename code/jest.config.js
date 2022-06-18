@@ -1,11 +1,14 @@
 module.exports = {
-  roots: ["<rootDir>/src"],
-  testMatch: ["**/?(*.)+(spec|test).ts?(x)"],
-  moduleFileExtensions: ["ts", "js", "json", "node"],
-  testEnvironment: "node",
-  globals: {
-    "ts-jest": {
-      diagnostics: false,
-    },
-  },
+   roots: ["<rootDir>/src"],
+   transform: {
+      "^.+\\.tsx?$": "ts-jest",
+   },
+   testMatch: ["**/?(*.)+(spec|test).ts?(x)"],
+   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+   testEnvironment: "node",
+   globals: {
+      "ts-jest": {
+         diagnostics: false,
+      },
+   },
 };
