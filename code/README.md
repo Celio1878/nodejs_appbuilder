@@ -65,7 +65,7 @@ $ npm run test:coverage
 # Architecture
 Layered architecture with TDD.
 
-Coverage is 100% in the test.
+Coverage all functionalities in the tests.
 <br>
 <br>
 

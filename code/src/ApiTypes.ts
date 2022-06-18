@@ -3,7 +3,7 @@ import * as express from "express";
 import { NextFunction, Request, Response } from "express";
 
 /**
- * Representa um modulo do servico.
+ * Represent a module service.
  */
 export type Module = {
   name: string;
