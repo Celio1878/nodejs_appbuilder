@@ -13,7 +13,7 @@
 
 - [Sumário](#sumário)
 - [Project](#project)
-  - [Pré-requisites](#pré-requisites)
+  - [Pre-requisites](#pre-requisites)
     - [🎲 Running the Project](#-running-the-project)
 - [Architecture](#architecture)
     - [Main Libs](#main-libs)
@@ -26,13 +26,11 @@
 
 # Project
 
-Create NodeJS applications with a Serverless handle, easily add routes and application loggers with `pino`.
-
-> _Obs:_ `pino` is a logger for NodeJS, `pino-pretty` is a logger for NodeJS with pretty format.
+Create NodeJS applications with a Serverless handler, easily add routes.
 
 <br>
 
-## Pré-requisites
+## Pre-requisites
 
 Before you start, install it on your machine:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
@@ -75,7 +73,6 @@ Coverage all functionalities in the tests.
 -  [Typescript](https://www.typescriptlang.org/)
 -  [CORS](https://expressjs.com/en/resources/middleware/cors.html)
 -  [Compression](https://www.npmjs.com/package/compression)
--  [Pino](https://www.npmjs.com/package/pino)
 -  [TS-PRUNE](https://www.npmjs.com/package/ts-prune)
 
 <br>
@@ -100,7 +97,6 @@ Coverage all functionalities in the tests.
 
 - [x] Create API
 - [x] Create a new route
-- [x] Add Logger
 - [x] Test Coverage
 - [x] Remove unused code
 - [x] Build

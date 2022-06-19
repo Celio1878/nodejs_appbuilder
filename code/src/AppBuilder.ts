@@ -80,7 +80,7 @@ function default_args(args: Partial<BuildArgs>): BuildArgs {
          methods: "OPTIONS, GET, POST, PATCH, PUT, DELETE",
          preflightContinue: false,
          optionsSuccessStatus: 204,
-         ...(args.cors || {}),
+         ...(args?.cors || {}),
       },
 
       error_handler: (error: any, _req: Request, res: Response) =>
@@ -92,10 +92,10 @@ function default_args(args: Partial<BuildArgs>): BuildArgs {
       ...(args || {}),
       cors: {
          ...DEFAULT_CONFIG.cors,
-         ...(args.cors || {}),
+         ...(args?.cors || {}),
       },
 
-      error_handler: args.error_handler || DEFAULT_CONFIG.error_handler,
+      error_handler: args?.error_handler || DEFAULT_CONFIG.error_handler,
    };
 
    return final_args;
