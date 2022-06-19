@@ -83,8 +83,14 @@ function default_args(args: Partial<BuildArgs>): BuildArgs {
          ...(args?.cors || {}),
       },
 
-      error_handler: (error: any, _req: Request, res: Response) =>
-         reply_error(res, error),
+      error_handler: (
+         error: any,
+         req: Request,
+         res: Response,
+         next: NextFunction
+      ) => {
+         reply_error(res, error);
+      },
    };
 
    const final_args: BuildArgs = {
