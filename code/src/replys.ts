@@ -33,6 +33,7 @@ export const reply_not_found = reply_with_status(404);
 export const reply_error = reply_with_status(500);
 
 function reply_with_status(status: number) {
-   return (res: Response, response: ApiResponse) =>
+   return (res: Response, response: ApiResponse) => {
       res.status(status).json(response);
+   };
 }

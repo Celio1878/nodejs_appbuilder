@@ -1,6 +1,6 @@
 {
 	"name": "nodejs-appbuilder",
-	"version": "1.1.9",
+	"version": "1.2.0",
 	"description": "Builder API Express",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
