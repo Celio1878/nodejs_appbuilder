@@ -16,17 +16,17 @@
   - [Pré-requisites](#pré-requisites)
     - [🎲 Running the Project](#-running-the-project)
 - [Architecture](#architecture)
-    - [Principais Bibliotecas](#principais-bibliotecas)
+    - [Main Libs](#main-libs)
 - [Scrits](#scrits)
 - [Functionalities](#functionalities)
-  - [**For Examples verify the TESTS**](#for-examples-verify-the-tests)
+  - [**For Examples, verify the TESTS**](#for-examples-verify-the-tests)
 - [Autores](#autores)
 
 ---
 
 # Project
 
-Create Apps in NodeJS Serverless, add reply of controllers and loggers with `pino`.
+Create NodeJS applications with a Serverless handle, easily add routes and application loggers with `pino`.
 
 > _Obs:_ `pino` is a logger for NodeJS, `pino-pretty` is a logger for NodeJS with pretty format.
 
@@ -69,7 +69,7 @@ Coverage all functionalities in the tests.
 <br>
 <br>
 
-### Principais Bibliotecas
+### Main Libs
 
 -  [Express](https://expressjs.com/)
 -  [Typescript](https://www.typescriptlang.org/)
@@ -107,12 +107,16 @@ Coverage all functionalities in the tests.
 
 <br>
 
-## **For Examples verify the TESTS**
+## **For Examples, verify the TESTS**
 
 <br>
 
 ---
 
 # Autores
-
-[<img src="https://avatars.githubusercontent.com/u/40040827?&v=4" width=115><br><sub>Celio Vieira</sub>](https://github.com/celio1878)
+ <table>
+  <tr>
+    <td align="center"><a href="https://github.com/celio1878"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/40040827?&v=4" width="100px;" alt=""/><br /><sub><b>Célio Vieira</b></sub></a></td>
+    <td align="center"><a href="https://github.com/rickonodera"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/7835329?v=4" width="100px;" alt=""/><br /><sub><b>Ricardo Onodera</b></sub></a></td>
+  </tr>
+</table>
