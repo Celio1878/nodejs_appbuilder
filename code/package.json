@@ -19,8 +19,17 @@
 		"type": "git",
 		"url": "git+https://github.com/celio1878/nodejs_appbuilder"
 	 },
-	"keywords": [],
-	"author": "Celio Vieira",
+	"keywords": [
+		"appbuilder",
+		"nodejs",
+		"express",
+		"api",
+		"builder"
+	],
+	"author": {
+		"name": "Celio Vieira",
+		"email": "celio1878@hotmail.com"
+	},
 	"license": "ISC",
 	"dependencies": {
 		"compression": "^1.7.4",
